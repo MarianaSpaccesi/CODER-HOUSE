@@ -59,8 +59,10 @@ h1 {
   list-style: none; }
 
 .item {
-  margin: 15px;
   color: white; }
+
+.item--hover {
+  padding: 15px; }
 
 .item--hover:hover {
   text-decoration: underline;

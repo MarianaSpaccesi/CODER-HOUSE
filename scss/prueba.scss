@@ -65,15 +65,17 @@ h1 {
 }
  
 .item {
-    margin: 15px;
     color: white;
 }
  
- 
+.item--hover{
+    padding: 15px;
+}
  
 .item--hover:hover {
     text-decoration: underline;
     color: #f7fd04;
+
  
     
 }
