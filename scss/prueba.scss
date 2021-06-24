@@ -223,11 +223,7 @@ footer p:hover{
  
 /* pagina 2*/
  
-.section--1 {
-    margin: 5%;
-    padding-top: 5%;
-    
-}
+
  
 .frase {
     font-family: 'Comfortaa', cursive;
@@ -244,8 +240,11 @@ footer p:hover{
     margin-left: 25%;
 }
  
-.section--1 {
+#servicios {
     background: whitesmoke;
+    margin: 5%;
+    padding-top: 5%;
+
 }
  
  
@@ -270,6 +269,7 @@ $margen: 10vw;
  
 .subtitle--2 {
     color:#212121;
+    margin-top: 5%;
 }
  
 .clientes {

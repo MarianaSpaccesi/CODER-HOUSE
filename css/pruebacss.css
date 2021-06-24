@@ -177,10 +177,6 @@ footer p:hover {
   transform: scale(1.3, 1.3); }
 
 /* pagina 2*/
-.section--1 {
-  margin: 5%;
-  padding-top: 5%; }
-
 .frase {
   font-family: 'Comfortaa', cursive;
   font-size: 35px;
@@ -194,8 +190,10 @@ footer p:hover {
 .frase--2 {
   margin-left: 25%; }
 
-.section--1 {
-  background: whitesmoke; }
+#servicios {
+  background: whitesmoke;
+  margin: 5%;
+  padding-top: 5%; }
 
 /*página 3*/
 .img__cont {
@@ -209,7 +207,8 @@ footer p:hover {
   margin-bottom: 5%; }
 
 .subtitle--2 {
-  color: #212121; }
+  color: #212121;
+  margin-top: 5%; }
 
 .clientes {
   width: 333.33333px;
