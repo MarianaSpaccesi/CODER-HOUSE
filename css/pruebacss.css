@@ -369,7 +369,9 @@ footer p:hover {
 
 .contactanos {
   padding-bottom: 50px;
-  background-color: #4e4c4c; }
+  background-color: #4e4c4c;
+  box-shadow: 5px 5px 5px #798777;
+  margin: 0% 5%; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .clientes {
