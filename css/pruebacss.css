@@ -24,7 +24,8 @@
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: white;
-  width: 100vw; }
+  width: 100vw;
+  z-index: 999; }
 
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -192,7 +193,7 @@ footer p:hover {
 .frase--2 {
   margin-left: 25%; }
 
-#servicios {
+.servicios {
   background: whitesmoke;
   margin: 5%;
   padding-top: 5%; }
@@ -205,10 +206,10 @@ footer p:hover {
   margin-left: 15%;
   width: 70%; }
 
-.subtitle--3 {
+.subtitulo--3 {
   margin-bottom: 5%; }
 
-.subtitle--2 {
+.subtitulo--2 {
   color: #212121;
   margin-top: 5%; }
 
@@ -366,7 +367,7 @@ footer p:hover {
   .prod__cont {
     display: none; } }
 
-#contacto {
+.contactanos {
   padding-bottom: 50px;
   background-color: #4e4c4c; }
 
