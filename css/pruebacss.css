@@ -9,6 +9,9 @@
   margin: 0%;
   padding: 0%; }
 
+html {
+  scroll-behavior: smooth; }
+
 .body__cont {
   background-color: #212121;
   position: absolute; }
@@ -48,7 +51,6 @@ h1 {
   list-style: none;
   background-color: black;
   font-size: 30px;
-  margin-left: 10vw;
   padding-right: 15px; }
 
 .nav__list {
@@ -82,13 +84,9 @@ h2 {
   display: flex;
   justify-content: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 4vw;
+  font-size: 100px;
   color: white;
-  margin-top: 10%;
-  transition: .5s; }
-
-h2:hover {
-  transform: scale(1.3, 1.3); }
+  margin-top: 10%; }
 
 .historia {
   background-size: 1780px; }
@@ -117,7 +115,7 @@ hr {
   align-items: center;
   font-family: 'Libre Franklin', sans-serif;
   color: white;
-  font-size: 2vw;
+  font-size: 2em;
   padding: 25px;
   transition: .5s; }
 
@@ -170,14 +168,8 @@ hr {
   justify-content: center;
   background-color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 2vw;
+  font-size: 2em;
   color: white; }
-
-footer p {
-  transition: .5s ease-in-out; }
-
-footer p:hover {
-  transform: scale(1.3, 1.3); }
 
 /* pagina 2*/
 .frase__cont {
@@ -219,8 +211,8 @@ footer p:hover {
 .clientes {
   width: 333.33333px;
   height: 500px;
-  margin-left: 5vw;
-  margin-top: 5vw;
+  margin-left: 50px;
+  margin-top: 50px;
   border-radius: 5%;
   box-shadow: 5px 5px 5px #798777;
   transition: .5s; }
@@ -233,7 +225,7 @@ footer p:hover {
 .prod__cont {
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw; }
+  background-size: 100%; }
 
 .grid__cont--productos {
   display: grid;
@@ -281,7 +273,7 @@ footer p:hover {
 .red--ubicacion {
   height: 150px;
   width: 150px;
-  margin-left: 5vw; }
+  margin-left: 50px; }
 
 .redes-ubicacion {
   color: #8f8e91; }
@@ -289,7 +281,7 @@ footer p:hover {
 .red--instagram {
   height: 150px;
   width: 150px;
-  margin-left: 5vw; }
+  margin-left: 50px; }
 
 .redes-instagram {
   color: #e84255; }
@@ -297,7 +289,7 @@ footer p:hover {
 .red--facebook {
   height: 150px;
   width: 150px;
-  margin-left: 5vw; }
+  margin-left: 50px; }
 
 .redes-facebook {
   color: #1977f3; }
@@ -305,7 +297,7 @@ footer p:hover {
 .redes__cont {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: 5vw;
+  justify-content: 50px;
   align-items: space-between;
   margin-top: 5%;
   margin-bottom: 5%; }
@@ -316,7 +308,7 @@ footer p:hover {
   align-content: space-between;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  margin: 2vw; }
+  margin: 25px; }
 
 .red--ubicacion {
   margin-right: 35px; }
@@ -328,27 +320,31 @@ footer p:hover {
   margin-right: 35px; }
 
 @media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px; }
   .header__cont h1 {
     font-size: 25px; }
   .header__cont {
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    width: 100%; }
   .grid__cont {
     grid-template-areas: "img1" "texto1"  "img2"  "texto2";
     grid-template-columns: 100%;
     grid-template-rows: 1fr; }
+  .img-1 {
+    margin-left: 15%; }
   .img {
-    width: 50%;
-    justify-self: center; }
+    width: 75%; }
   .text {
-    font-size: 3vw;
-    margin-left: 20%;
+    font-size: 1em;
+    margin-left: 10%;
     padding: 0%; }
   .p2 {
     margin-left: 15%; }
   .grid--text--2 {
     margin-top: 0; }
   footer p {
-    font-size: 4vw; }
+    font-size: 15px; }
   .frase {
     display: none; }
   .clientes {
@@ -377,10 +373,12 @@ footer p:hover {
   margin: 0% 5%; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  h2 {
+    font-size: 75px; }
   .clientes {
     width: 150px;
     height: 150px;
-    margin-left: 10vw; }
+    margin-left: 10%; }
   .frase {
     display: none; }
   .redes__cont {

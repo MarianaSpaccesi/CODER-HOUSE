@@ -5,6 +5,9 @@
     margin: 0%;
     padding: 0%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .body__cont {
     background-color: #212121;
@@ -51,7 +54,6 @@ h1 {
     list-style: none;
     background-color: black;
     font-size: 30px; 
-    margin-left: 10vw;
     padding-right: 15px;
     
 }
@@ -92,15 +94,11 @@ h2{
     display: flex;
     justify-content: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 4vw;
+    font-size: 100px;
     color: white;
     margin-top: 10%;
-    transition: .5s;
 }
 
-h2:hover {
-    transform: scale(1.3,1.3);
-}
 
 .historia {
     background-size: 1780px;
@@ -137,7 +135,7 @@ hr {
     align-items: center;
     font-family: 'Libre Franklin', sans-serif;
     color: white;
-    font-size: 2vw;
+    font-size: 2em;
     padding: 25px;
     transition: .5s;
 }
@@ -203,17 +201,10 @@ hr {
     justify-content: center;
     background-color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 2vw;
+    font-size: 2em;
     color: white;
 }
 
-footer p {
-    transition: .5s ease-in-out;
-}
-
-footer p:hover{
-    transform: scale(1.3,1.3);
-}
 
 /* pagina 2*/
 
@@ -246,7 +237,7 @@ footer p:hover{
 
 $ancho:1000px;
 $alto:1000px;
-$margen: 10vw;
+$margen: 100px;
 
 .img__cont {
     display: flex;
@@ -285,7 +276,7 @@ $margen: 10vw;
 .prod__cont {
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
 }
 
 .grid__cont--productos {
@@ -379,7 +370,7 @@ $redes: (
     align-content: space-between;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    margin: 2vw;
+    margin: 25px;
 }
 
 .red--ubicacion {
@@ -395,13 +386,18 @@ $redes: (
 }
 
 @media only screen and (max-width:768px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
     .header__cont h1 {
         font-size: 25px;
-    
     }
 
     .header__cont {
         flex-flow: column nowrap;
+        width: 100%;
     }
 
     .grid__cont {
@@ -414,14 +410,17 @@ $redes: (
     grid-template-rows: 1fr;
     }
 
+    .img-1 {
+        margin-left: 15%;
+    }
+
     .img {
-        width: 50%;
-        justify-self: center;
+        width: 75%;
     }
 
     .text {
-        font-size: 3vw;
-        margin-left: 20%;
+        font-size: 1em;
+        margin-left: 10%;
         padding: 0%;
     }
 
@@ -434,7 +433,7 @@ $redes: (
     }
 
     footer p {
-        font-size: 4vw;
+        font-size: 15px;
     }
 
     .frase {
@@ -488,10 +487,14 @@ $redes: (
 
 @media only screen and ( min-width:769px) and (max-width:1024px) {
 
+    h2 {
+        font-size: 75px;
+    }
+
     .clientes {
         width: 150px;
         height: 150px;
-        margin-left: 10vw;
+        margin-left: 10%;
     }
 
     .frase {
