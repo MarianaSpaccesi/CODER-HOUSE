@@ -124,10 +124,8 @@ hr {
 }
 
 .grid1 {
-    background: url(../img/fondo.jpg) no-repeat;
-    background-size: 1980px;
-    padding: 10%;
-    
+    background: url(../img/fondoblanco.jpg) no-repeat;
+    background-size: 100%;
 }
 
 .text {
@@ -138,10 +136,13 @@ hr {
     font-size: 2em;
     padding: 25px;
     transition: .5s;
+    margin-left: 5%;
 }
 
 .grid--text {
     grid-area: texto1;
+    color: #212121;
+    font-weight: bold;
 
     
 }
@@ -149,6 +150,8 @@ hr {
 .grid--text--2 {
     grid-area: texto2;
     margin-top: 15%;
+    color: #212121;
+    font-weight: bold;
 }
 
 .text:hover{
@@ -168,9 +171,13 @@ hr {
 }
 
 .img {
-    display: flex;
     align-items: stretch;
     width: 70%;
+}
+
+.img {
+    align-items: stretch;
+    width: 40%;
 }
 
 .img-1 {
@@ -274,8 +281,7 @@ $margen: 100px;
 /*página 4*/
 
 .prod__cont {
-    background-image: url(../img/banner.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/banner.jpg) no-repeat;
     background-size: 100%;
 }
 
@@ -290,7 +296,7 @@ $margen: 100px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 2%;
     margin: 5%;
-    background: whitesmoke;
+    background: #cfcfcf;
     padding: 5%;
 }
 
@@ -387,8 +393,10 @@ $redes: (
 
 @media only screen and (max-width:768px) {
 
+
     h2 {
         font-size: 40px;
+        margin-top: 20%;
     }
 
     .header__cont h1 {
@@ -411,15 +419,20 @@ $redes: (
     }
 
     .img-1 {
-        margin-left: 15%;
+        margin-top: 0;
+        margin-left: 10%;
+        
     }
 
+    .img-2 {
+        margin-top: 0;
+    }
     .img {
         width: 75%;
     }
 
     .text {
-        font-size: 1em;
+        font-size: 2em;
         margin-left: 10%;
         padding: 0%;
     }
@@ -484,8 +497,13 @@ $redes: (
     margin: 0% 5%;
 }
 
+/*media queris*/
 
 @media only screen and ( min-width:769px) and (max-width:1024px) {
+
+    .historia{
+        margin-top: 25%;
+    } 
 
     h2 {
         font-size: 75px;
@@ -501,6 +519,10 @@ $redes: (
         display: none;
     }
 
+    .img {
+        width: 75%;
+    }
+
     .redes__cont {
         flex-flow: column nowrap;
         align-items: center;
@@ -508,6 +530,22 @@ $redes: (
 
     .prod__cont {
         display:none;
+    }
+
+    .img-1 {
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .img-2 {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+    .text {
+        margin: 0;
+        font-size: 1.5em;
     }
 }
 
